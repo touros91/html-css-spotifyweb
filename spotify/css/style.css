@@ -107,6 +107,36 @@ aside li img {
     bottom: 0;
 }
 
+.aside-bottom img {
+    width: 7%;
+    vertical-align: middle;
+}
+
+.installa-app{
+    width: 180px;
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #6E6E6E;
+}
+
+.profile {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.profile img {
+    width: 20px;
+    height: 20px;
+    background-color: grey;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.profile span {
+    margin-left: 5px;
+}
+
+
 /* nav playlist  */
 .plus-box {
     color: black;
