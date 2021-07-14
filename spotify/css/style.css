@@ -13,6 +13,11 @@ body {
     color: #6E6E6E;
 }
 
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 .testo-bianco {
     color: #F9F9F9;
 }
@@ -51,7 +56,7 @@ main {
 
 /* sidebar laterale */
 .sidebar {
-    width: 200px;
+    min-width: 200px;
     background-color: black;
     overflow-y: auto;
 }
@@ -92,8 +97,10 @@ ul li {
 
 /* contenitore album */
 .album-container {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     background-color: #141922;
+    width: 100%;
+    overflow-y: auto;
 }
 
 .top-bar {
@@ -109,7 +116,7 @@ ul li {
     border-radius: 25px;
     padding: 0 30px;
     background-color: #080B12;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .upgrade-button a {
@@ -119,6 +126,7 @@ ul li {
 .album-container ul {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .album-container ul li {
@@ -129,6 +137,44 @@ ul li {
 
 .album-container ul li:first-child {
     border-bottom: 1px solid #ADFF2E;
+}
+
+.sezione-album {
+    margin: auto;
+    width: 98%;
+}
+
+.recently-played {
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
+    width: calc(100% / 6);
+    height: 150px;
+    margin-right: 10px;
+}
+
+/* .col-1 {
+    background-image: url("../img/metal_lifting.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.recently-played img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.album-title {
+    font-size: 15px;
+}
+
+.recently-played p {
+    text-align: center;
 }
 
 /* footer  */
