@@ -9,9 +9,11 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 12px;
+    color: #6E6E6E;
 }
 
-.scritte-bianche {
+.testo-bianco {
     color: #F9F9F9;
 }
 
@@ -19,16 +21,20 @@ body {
     color: #D2D2D2;
 }
 
-.testo-grigio {
-    color: #6E6E6E;
+i {
+    font-size: 20px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
 }
 
 .margin-top-15 {
     margin-top: 15px;
 }
 
-.margin-top-25 {
-    margin-top: 25px;
+.margin-top-20 {
+    margin-top: 20px;
 }
 /* main  */
 main {
@@ -36,7 +42,7 @@ main {
     height: calc(100vh - 60px);
 }
 
-/* side-bar laterale */
+/* sidebar laterale */
 .side-bar {
     width: 200px;
     background-color: black;
@@ -48,17 +54,31 @@ main {
     width: 120px;
 }
 
+/* nav  */
 ul li {
     list-style: none;
-    text-indent: -10px;
-    padding-left: 20px;
-    font-size: 13px;
+    margin-top: 10px;
 }
 
-ul li a {
+a {
     text-decoration: none;
     color: #6E6E6E;
+}
 
+/* nav playlist  */
+
+ul:last-child li {
+    padding: 0px;
+}
+
+.plus-box {
+    color: black;
+    background-color: #A3A3A3;
+    font-size: 15px;
+    text-align: center;
+    line-height: 25px;
+    padding: 4px 0 1px 4px;
+    margin-right: 5px;
 }
 
 /* contenitore album */
