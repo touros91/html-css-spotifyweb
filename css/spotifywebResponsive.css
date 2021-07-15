@@ -1,0 +1,76 @@
+/* da completare */
+
+@media screen and (max-width: 600px){
+
+
+}
+/* da completare */
+
+
+
+/* visualizzazione S smartphones  */
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+
+    .sezione-album {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-nav ul{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+  .menu-nav ul li {
+      width: calc(100% / 3);  
+      display: inline-block;
+      font-size: 9px;
+    }
+   
+    .col-1-s, 
+    .col-2-s, 
+    .col-3-s, 
+    .col-4-s, 
+    .col-5-s, 
+    .col-6-s 
+    {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+
+/* visualizzazione MD da tablet  */
+
+@media screen and (min-width: 701px) and (max-width: 1100px) {
+    
+    .sezione-album {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-1-md, 
+    .col-2-md, 
+    .col-3-md, 
+    .col-4-md, 
+    .col-5-md, 
+    .col-6-md  {
+        width: calc(25% - 20px);
+        margin: 10px;
+    }
+}
+
+/* visualizzazione LG da desktop  */
+@media screen and (min-width: 1101px) {
+    
+    .col-1-l, 
+    .col-2-lg, 
+    .col-3-lg, 
+    .col-4-lg, 
+    .col-5-lg, 
+    .col-6-lg {
+        width: calc((100% / 6) - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+}

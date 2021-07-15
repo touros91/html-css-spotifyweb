@@ -15,12 +15,12 @@ body {
 
 h2 {
     font-size: 18px;
-    margin: 10px 0 20px 15px;
+    margin: 10px 0 20px 10px;
 }
 
 .h2-with-subtitle {
     font-size: 18px;
-    margin: 20px 10px 5px 15px;
+    margin: 20px 10px 5px 10px;
 }
 
 .font-size-12 {
@@ -85,7 +85,6 @@ aside {
     width: 200px;
     background-color: black;
     z-index: 2;
-    /* position: relative; */
     display: flex;
     flex-direction: column;
 }
@@ -195,7 +194,6 @@ nav li {
     background-color: #141922;
     width: calc(100% - 200px);
     overflow-y: auto;
-    /* display: flex; */
 }
 
 .top-bar-section {
@@ -224,6 +222,7 @@ nav li {
 
 .album-container ul {
     display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 }
 
@@ -242,16 +241,8 @@ nav li {
     flex-direction: row;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
-    width: calc((100% / 6) - 30px);
-    margin: 0 15px;
-    text-align: center;
-}
-
 .sezione-album img {
     width: 100%;
-    object-fit: cover;
-    object-position: center;
     margin-bottom: 10px;
 }
 
@@ -265,7 +256,7 @@ nav li {
 }
 
 .subtitle {
-    margin: 5px 10px 20px 15px;
+    margin: 5px 10px 20px 10px;
 }
 
 .sezione-album:last-child img {
@@ -306,8 +297,6 @@ footer {
 .footer-left .footer-img-box img {
     display: inline-block;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
 }
 
 .footer-left .footer-left-icons i{
@@ -327,6 +316,7 @@ footer {
 }
 
 /* footer centrale  */
+
 .footer-center div {
     height: 30px;
     text-align: center;
@@ -349,6 +339,16 @@ footer {
 
 .linea {
     width: 400px;
+    height: 4px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.linea-piccola {
+    width: 50px;
     height: 4px;
     border-radius: 20px;
     background-color: white;
