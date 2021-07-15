@@ -3,6 +3,32 @@
 @media screen and (max-width: 600px){
 
 
+    .sezione-album {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-nav ul{
+        display: flex;
+        flex-wrap: wrap;  
+    }
+
+  .menu-nav ul li {
+      width: calc(100% / 3);  
+      display: inline-block;
+      font-size: 9px;
+    }
+   
+    .col-1-s, 
+    .col-2-s, 
+    .col-3-s, 
+    .col-4-s, 
+    .col-5-s, 
+    .col-6-s 
+    {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
 }
 /* da completare */
 
@@ -63,7 +89,7 @@
 /* visualizzazione LG da desktop  */
 @media screen and (min-width: 1101px) {
     
-    .col-1-l, 
+    .col-1-lg, 
     .col-2-lg, 
     .col-3-lg, 
     .col-4-lg, 
