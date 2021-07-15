@@ -143,11 +143,15 @@ nav li {
     vertical-align: middle;
 }
 
-.installa-app{
+.installa-app {
     width: 170px;
     display: inline-block;
     margin-left: 10px;
     border-bottom: 1px solid #6E6E6E;
+    padding-bottom: 10px;
+}
+.installa-app span {
+    margin-left: 5px;
 }
 
 .profile {
