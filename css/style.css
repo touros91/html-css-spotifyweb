@@ -296,6 +296,8 @@ footer {
 .footer-center {
     width: 80%;
 }
+
+/* footer left  */
 .footer-img-box {
     width: 40px;
     height: 40px;
@@ -324,6 +326,7 @@ footer {
     color: white;
 }
 
+/* footer centrale  */
 .footer-center div {
     height: 30px;
     text-align: center;
@@ -354,6 +357,7 @@ footer {
     display: inline-block;
 }
 
+/* footer left  */
 .footer-right div {
     padding: 0 10px;
 }
@@ -362,9 +366,13 @@ footer {
     padding-left: 10px;
     color: white;
 }
+.footer-right div a:last-child {
+    vertical-align: middle;
+}
 
 .linea.linea-piccola {
     width: 100px;
+    vertical-align: middle;
 }
 
 
