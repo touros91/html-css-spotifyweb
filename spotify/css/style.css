@@ -17,6 +17,9 @@ h2 {
     font-size: 18px;
     margin-bottom: 20px;
 }
+.font-size-12 {
+    font-size: 12px;
+}
 
 .color {
     color: #919191;
@@ -39,7 +42,7 @@ i {
 }
 
 .margin-bottom-10 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .margin-top-10 {
@@ -56,6 +59,13 @@ i {
 .padding-10 {
     padding: 10px;
 }
+.padding-top-15 {
+    padding-top: 15px;
+}
+.padding-left-10 {
+    padding-left: 10px;
+}
+
 
 /* main  */
 main {
@@ -63,28 +73,43 @@ main {
     height: calc(100vh - 60px);
 }
 
-/* sidebar laterale */
-.sidebar {
-    min-width: 150px;
+/* sidebar laterale ASIDE */
+
+aside {
+    width: 200px;
     background-color: black;
-    overflow-y: auto;
-    z-index: 1;
-    position: relative;
+    z-index: 2;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
     width: 120px;
-    padding: 10px 0 0 10px;
-    /* z-index: 1;
-    position: relative; */
+    padding: 10px 0 10px 10px;
 }
 
 /* nav  */
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    margin-bottom: 5px;
+}
+
+
 #verde {
-    list-style: none;
-    margin-top: 10px;
-    padding: 10px;
     border-left: 1px solid #ADFF2E;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 a {
@@ -92,19 +117,25 @@ a {
     color: #6E6E6E;
 }
 
-ul li {
-    padding: 5px 10px;
+nav {
+    height: 90%;
 }
 
-aside li img {
+aside nav img {
     width: 10%;
     vertical-align: middle;
 }
 
+nav li {
+    list-style: none;
+    padding: 10px 0 0 10px;
+}
+
 .aside-bottom {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
 }
 
 .aside-bottom img {
@@ -113,10 +144,9 @@ aside li img {
 }
 
 .installa-app{
-    width: 180px;
+    width: 170px;
     display: inline-block;
     margin-left: 10px;
-    padding-bottom: 10px;
     border-bottom: 1px solid #6E6E6E;
 }
 
@@ -136,22 +166,24 @@ aside li img {
     margin-left: 5px;
 }
 
-
 /* nav playlist  */
 .plus-box {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
     color: black;
     background-color: #A3A3A3;
-    font-size: 15px;
+    font-size: 25px;
     text-align: center;
     line-height: 25px;
-    padding: 4px 0 1px 4px;
-    margin: 0 10px;
+    margin-right: 5px;
 }
 
-/* contenitore album */
+/* contenitore ALBUM */
+
 .album-container {
     background-color: #141922;
-    width: 100%;
+    width: calc(100% - 200px);
     overflow-y: auto;
 }
 
@@ -160,7 +192,7 @@ aside li img {
     top: 0;
     left: 0;
     width: 100%;
-    position: fixed;
+    z-index: 1;
 }
 
 .top-bar {
@@ -245,7 +277,8 @@ aside li img {
 
 /* footer  */
 footer {
-    display: flex;
     background-color: #282828;
     height: 60px;
+    z-index: 3;
+    position: relative;
 }
