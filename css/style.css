@@ -108,7 +108,6 @@ nav a {
     margin-bottom: 5px;
 }
 
-
 #verde {
     border-left: 1px solid #ADFF2E;
 }
@@ -234,11 +233,11 @@ nav li {
 }
 
 .linea-verde {
-    width: 20px;
+    /* width: 20px;
     height: 1px;
     background-color: #ADFF2E;
     margin-left: 20px;
-    margin-top: 2px;
+    margin-top: 2px; */
 }
 
 .sezione-album {
@@ -418,20 +417,34 @@ footer {
 }
 
 .sezione-album div:hover .img.img-hidden::after {
-    content: "\f144";
-    font-weight: 400;
-    font-family: "font AWESOME 5 FREE";
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    left: 0%;
-    color: white;
-    font-size: 50px;
-    background-color: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
 }
 
+
+.menu-nav ul li:hover a{
+    color: white;
+}
+
+.menu-nav ul li:hover div{
+    width: 20px;
+    height: 1px;
+    background-color: #ADFF2E;
+    margin-left: 15px;
+    margin-top: 2px; 
+    text-align: center;
+}
+
+nav div ul li:hover a {
+    color: white;
+}
+/* 
+nav div ul li:hover div {
+    border-left: 1px solid #ADFF2E;
+
+} */
+
+
+nav .font-size-12.vertical-align:hover {
+    color: white;
+
+}
