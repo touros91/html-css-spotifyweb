@@ -232,14 +232,6 @@ nav li {
     list-style: none;
 }
 
-.linea-verde {
-    /* width: 20px;
-    height: 1px;
-    background-color: #ADFF2E;
-    margin-left: 20px;
-    margin-top: 2px; */
-}
-
 .sezione-album {
     display: flex;
 }
@@ -280,18 +272,16 @@ footer {
 }
 
 .footer-left, .footer-right {
-    
+    width: 20%;
     display: flex; 
     align-items: center;
 }
 
 .footer-left {
-    width: 20%;
     justify-content: space-around;
 }
 
 .footer-right {
-    width: 20%;
     justify-content: flex-end;
 }
 
@@ -299,12 +289,8 @@ footer {
     width: 60%;
     display: flex; 
     flex-grow: 1;
-}
-
-.footer-center {
-    width: 40%;
-    display: flex;
     flex-direction: column;
+
 }
 
 /* footer left  */
@@ -418,7 +404,7 @@ footer {
     flex-wrap: nowrap;
 }
 
-/* bonus con HOVER  */
+/* bonus con EFFETTI HOVER  */
 .img {
     position: relative;
 }
@@ -444,18 +430,14 @@ footer {
     border-radius: 50%;
 }
 
-
 .menu-nav ul li:hover a{
     color: white;
 }
 
-.menu-nav ul li:hover div{
+.menu-nav ul li:hover span{
     width: 20px;
     height: 1px;
-    background-color: #ADFF2E;
-    margin-left: 15px;
-    margin-top: 2px; 
-    text-align: center;
+    border-bottom: 1px solid #ADFF2E;
 }
 
 nav div ul li:hover a, 
