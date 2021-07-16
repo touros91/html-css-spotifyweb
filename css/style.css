@@ -6,6 +6,12 @@
 }
 
 /* common  */
+
+main {
+    display: flex;
+    height: calc(100vh - 60px);
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -72,13 +78,6 @@ i {
     padding-left: 10px;
 }
 
-
-/* main  */
-main {
-    display: flex;
-    height: calc(100vh - 60px);
-}
-
 /* sidebar laterale ASIDE */
 
 aside {
@@ -95,6 +94,10 @@ aside {
 }
 
 /* nav  */
+
+aside section, aside .section-bottom {
+    display: none;
+}
 
 nav {
     display: flex;
@@ -113,7 +116,6 @@ nav a {
 .playlist {
     display: flex;
     flex-direction: column;
-    /* flex-grow: 1; */
     overflow-y: auto;
 }
 
@@ -231,10 +233,6 @@ nav li {
     list-style: none;
 }
 
-/* .album-container ul li:first-child {
-    border-bottom: 1px solid #ADFF2E;
-} */
-
 .linea-verde {
     width: 20px;
     height: 1px;
@@ -242,9 +240,6 @@ nav li {
     margin-left: 20px;
     margin-top: 2px;
 }
-
-
-
 
 .sezione-album {
     display: flex;
@@ -287,14 +282,26 @@ footer {
 }
 
 .footer-left, .footer-right {
-    width: 20%;
+    width: 30%;
     display: flex; 
-    justify-content: center;
     align-items: center;
 }
 
+.footer-right {
+    justify-content: flex-end;
+}
+
 .footer-center {
-    width: 80%;
+    width: 40%;
+    display: flex; 
+    
+
+}
+
+.footer-center {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* footer left  */
@@ -326,11 +333,6 @@ footer {
 
 /* footer centrale  */
 
-.footer-center {
-    display: flex;
-    flex-direction: column;
-}
-
 .footer-center div i {
     padding-left: 30px;
     padding-top: 15px;
@@ -348,26 +350,26 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 5px;
+    color: #AFAFAF
 }
 
-.hr {
-    width: 250px;
+.linea-grigia {
+    width: 40%;
     height: 4px;
     background-color: #585858;
     border-radius: 10px;
     display: inline-block;
     margin: 0 10px;
-
 }
- .hr-2 {
+ .linea-bianca {
     width: 20%;
-    background-color: #C1C1C1;
+    background-color: #AFAFAF;
     height: 4px;
     border-radius: 10px;
     display: inline-block;
     display: flex;
     justify-content: center;
-    } 
+} 
 
 .linea-piccola {
     width: 50px;
@@ -391,13 +393,8 @@ footer {
     vertical-align: middle;
 }
 
-.footer-right input:last-child {
-    width: 100px;
-    height: 10px;  
-}
-
 .linea.linea-piccola {
-    width: 100px;
+    width: 100%;
     vertical-align: middle;
 }
 
