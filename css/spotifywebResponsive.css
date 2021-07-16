@@ -1,5 +1,4 @@
-/* da completare */
-
+/* visualizzazione XS mobile  */
 @media screen and (max-width: 480px){
 
 
@@ -26,12 +25,23 @@
         justify-content: flex-end;
     }
 
+    main aside .section-bottom a:first-child {
+        width: 50%;
+        margin-left: 8px;
+        border-bottom: 1px solid #6E6E6E;
+        /* padding-bottom: 10px; */
+    }
+
+    main aside .section-bottom a:last-child {
+        width: 25px;
+        height: 25px;
+        margin: 10px 0 20px 5px;
+
+    }
 
     aside nav, aside div, aside .aside-bottom  {
         display: none;
     }
-
-
 
     .sezione-album {
         display: flex;
@@ -44,7 +54,7 @@
     }
 
     .menu-nav ul li {
-      width: calc(100% / 3);  
+      width: 25%;  
       display: inline-block;
       font-size: 9px;
     }
@@ -56,15 +66,13 @@
     .col-5-s, 
     .col-6-s 
     {
-        width: calc(100% - 20px);
+        width: calc(50% - 20px);
         margin: 10px;
     }
 }
 
 
-
 /* visualizzazione S smartphones  */
-
 @media screen and (min-width: 481px) and (max-width: 700px) {
 
 
@@ -97,10 +105,18 @@
 }
 
 /* visualizzazione MD da tablet  */
-
 @media screen and (min-width: 701px) and (max-width: 1100px) {
 
+    .menu-nav ul{
+        display: flex;
+        flex-wrap: wrap;  
+    }
 
+    .menu-nav ul li {
+      width: 20%;  
+      display: inline-block;
+      font-size: 9px;
+    }
 
     .sezione-album {
         display: flex;
@@ -120,7 +136,6 @@
 
 /* visualizzazione LG da desktop  */
 @media screen and (min-width: 1101px) {
-
 
     .col-1-lg, 
     .col-2-lg, 
