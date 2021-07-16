@@ -385,13 +385,15 @@ footer {
     padding-left: 10px;
     color: white;
 }
-.footer-right div a:last-child {
-    vertical-align: middle;
-}
 
 .linea.linea-piccola {
-    width: 100%;
-    vertical-align: middle;
+    width: 70px;
+    align-self: center;
+}
+
+.footer-right .testo-bianco {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 /* bonus con HOVER  */
@@ -434,17 +436,26 @@ footer {
     text-align: center;
 }
 
-nav div ul li:hover a {
+nav div ul li:hover a, 
+nav .font-size-12.vertical-align:hover,
+.installa-app span:hover {
     color: white;
 }
-/* 
-nav div ul li:hover div {
-    border-left: 1px solid #ADFF2E;
 
-} */
+.padding-left-10 .plus-box.vertical-align:hover {
+    background-color: white;  
+    color: black 
+}
 
-
-nav .font-size-12.vertical-align:hover {
+.font-size-12 vertical-align:hover {
     color: white;
+    background-color: white;
+}
 
+.album-container .top-bar-section.padding-10 button:hover{
+    transform: scale(1.1);
+}
+
+.footer-center-2 a:nth-child(3):hover {
+    transform: scale(1.4);
 }
