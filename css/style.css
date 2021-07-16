@@ -108,10 +108,6 @@ nav a {
     margin-bottom: 5px;
 }
 
-#verde {
-    border-left: 1px solid #ADFF2E;
-}
-
 .playlist {
     display: flex;
     flex-direction: column;
