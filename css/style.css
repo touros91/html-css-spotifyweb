@@ -189,7 +189,6 @@ nav li {
 }
 
 /* contenitore ALBUM */
-
 .album-container {
     background-color: #141922;
     width: calc(100% - 200px);
@@ -238,6 +237,7 @@ nav li {
 
 .sezione-album img {
     width: 100%;
+    display: block;
 }
 
 .album-title {
@@ -321,7 +321,6 @@ footer {
 }
 
 /* footer centrale  */
-
 .footer-center div i {
     padding-left: 30px;
     padding-top: 15px;
@@ -475,5 +474,3 @@ nav div:first-child ul li:hover {
 .footer-right .testo-bianco div:last-child:active .linea.linea-piccola {
     background-color: #585858; 
 }
-
-

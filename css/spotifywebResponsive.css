@@ -1,7 +1,5 @@
 /* visualizzazione XS mobile  */
 @media screen and (max-width: 480px){
-
-
     main aside {
             width: 50px; 
         }
@@ -71,11 +69,8 @@
     }
 }
 
-
 /* visualizzazione S mobile  */
 @media screen and (min-width: 481px) and (max-width: 700px) {
-
-
     .sezione-album {
         display: flex;
         flex-wrap: wrap;
@@ -106,7 +101,6 @@
 
 /* visualizzazione MD da tablet  */
 @media screen and (min-width: 701px) and (max-width: 1100px) {
-
     .menu-nav ul{
         display: flex;
         flex-wrap: wrap;  
@@ -136,7 +130,6 @@
 
 /* visualizzazione LG da desktop  */
 @media screen and (min-width: 1101px) {
-
     .col-1-lg, 
     .col-2-lg, 
     .col-3-lg, 
