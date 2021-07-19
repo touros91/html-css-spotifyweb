@@ -117,7 +117,7 @@ nav a {
 }
 
 #verde {
-    border-left: 1px solid #ADFF2E;
+    border-left: 2px solid #ADFF2E;
 }
 
 .playlist {
@@ -152,7 +152,7 @@ nav li {
 }
 
 .aside-bottom img {
-    width: 7%;
+    width: 10%;
     vertical-align: middle;
 }
 
@@ -239,8 +239,13 @@ nav li {
     list-style: none;
 }
 
-#verde-bottom {
-    border-bottom: 1px solid #ADFF2E;
+#verde-bottom::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: greenyellow;
+    width: 35px;
+    margin: auto;
 }
 
 .sezione-album {
@@ -295,7 +300,6 @@ footer {
 .footer-center {
     width: 60%;
     display: flex; 
-    /* flex-grow: 1; */
     flex-direction: column;
 }
 
@@ -351,7 +355,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5px;
     color: #AFAFAF
 }
 
@@ -363,10 +366,11 @@ footer {
     display: inline-block;
     margin: 0 10px;
 }
+
  .linea-bianca {
     width: 20%;
     background-color: #AFAFAF;
-    height: 4px;
+    height: 100%;
     border-radius: 10px;
     display: inline-block;
     display: flex;
@@ -374,12 +378,20 @@ footer {
 } 
 
 .linea-piccola {
-    width: 50px;
+    width: 70px;
     height: 4px;
     border-radius: 20px;
-    background-color: #C1C1C1;
-    border: none;
+    background-color: #585858;
     display: inline-block;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.linea-piccola-2 {
+    width: 40%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #AFAFAF;
 }
 
 /* footer left  */
@@ -395,13 +407,6 @@ footer {
 
 .footer-right .testo-bianco div:last-child {
     padding-left: 0px;
-}
-
-.linea.linea-piccola {
-    width: 70px;
-    align-self: center;
-    margin-left: 10px;
-
 }
 
 .footer-right .testo-bianco {
@@ -440,13 +445,7 @@ footer {
 }
 
 aside section a:hover {
-    border-left: 1px solid #ADFF2E;
-}
-
-.menu-nav ul li:hover span {
-    width: 20px;
-    height: 1px;
-    border-bottom: 1px solid #ADFF2E;
+    border-left: 2px solid #ADFF2E;
 }
 
 nav div ul li:hover a,
@@ -455,7 +454,7 @@ nav div ul li:hover a,
 }
 
 nav div:first-child ul li:hover {
-    border-left: 1px solid #ADFF2E;
+    border-left: 2px solid #ADFF2E;
 }
 
 .padding-left-10 .plus-box:hover {
@@ -471,14 +470,62 @@ nav div:first-child ul li:hover {
     transform: scale(1.2);
 }
 
-.footer-right .testo-bianco div:last-child:active a i {
-    color: red;
-}
-
-.footer-right .testo-bianco div:last-child:active .linea.linea-piccola {
-    background-color: #585858; 
-}
-
 .footer-center .footer-center-2 a:hover i, .footer-right .testo-bianco div a:hover i {
     color: #1ED760;
+}
+
+.linea-grigia:hover .linea-bianca {
+    background-color: greenyellow;
+}
+
+.linea-grigia {
+    position: relative;
+}
+
+.linea-grigia:hover .linea-bianca::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    top: calc(50% - 5px);
+    left: 50%;
+}
+
+.linea-bianca:active {
+    width: 100%;
+    transition: width 1s;
+}
+
+.linea-piccola:hover .linea-piccola-2 {
+    background-color: greenyellow;
+    position: relative;
+}
+
+.linea-piccola:hover .linea-piccola-2::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    top: calc(100% - 7px);
+    left: calc(100% + 5px);
+}
+
+.linea-piccola-2:active {
+    width: calc(100% + 7px);
+    transition: width 1s;
+}
+
+.album-container .menu-nav ul li:hover a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: greenyellow;
+    width: 35px;
+    margin: auto;
 }
