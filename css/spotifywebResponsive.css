@@ -18,6 +18,11 @@
             flex-basis: 90%;
     }
 
+    main aside section img {
+        width: 100%;
+        margin: 5px 0;
+    }
+
     main aside .section-bottom {
         display: flex;
         flex-direction: column;
@@ -25,15 +30,11 @@
     }
 
     main aside .section-bottom a:first-child {
-        width: 50%;
-        margin-left: 8px;
         border-bottom: 1px solid #6E6E6E;
     }
 
     main aside .section-bottom a:last-child {
-        width: 25px;
-        height: 25px;
-        margin: 10px 0 20px 5px;
+        margin: 10px 0;    
     }
 
     aside nav, aside div, aside .aside-bottom {
@@ -93,7 +94,6 @@
         display: flex;
         height: calc(100vh - 120px);
     }
-
 }
 
 /* visualizzazione S mobile  */
@@ -110,7 +110,6 @@
 
   .menu-nav ul li {
       width: calc(100% / 3);  
-
     }
    
     .col-1-s, 
@@ -122,7 +121,7 @@
     {
         width: calc(50% - 20px);
         margin: 10px;
-    }
+    } 
 }
 
 /* visualizzazione MD da tablet  */
@@ -135,7 +134,6 @@
 
     .menu-nav ul li {
       width: 20%;  
-      display: inline-block;
     }
 
     .menu-nav ul li:last-child {
@@ -148,12 +146,12 @@
         flex-wrap: wrap;
     }
 
-    .col-1-md, 
-    .col-2-md, 
-    .col-3-md, 
-    .col-4-md, 
-    .col-5-md, 
-    .col-6-md  {
+    .col-1-s, 
+    .col-2-s, 
+    .col-3-s, 
+    .col-4-s, 
+    .col-5-s, 
+    .col-6-s  {
         width: calc(25% - 20px);
         margin: 10px;
     }
@@ -161,12 +159,12 @@
 
 /* visualizzazione LG da desktop  */
 @media screen and (min-width: 1101px) {
-    .col-1-lg, 
-    .col-2-lg, 
-    .col-3-lg, 
-    .col-4-lg, 
-    .col-5-lg, 
-    .col-6-lg {
+    .col-1-s, 
+    .col-2-s, 
+    .col-3-s, 
+    .col-4-s, 
+    .col-5-s, 
+    .col-6-s {
         width: calc((100% / 6) - 20px);
         margin: 10px;
         text-align: center;

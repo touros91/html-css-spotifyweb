@@ -136,7 +136,7 @@ nav {
 }
 
 aside nav img {
-    width: 10%;
+    width: 20px;
     vertical-align: middle;
 }
 
@@ -152,7 +152,7 @@ nav li {
 }
 
 .aside-bottom img {
-    width: 10%;
+    width: 20px;
     vertical-align: middle;
 }
 
@@ -163,6 +163,7 @@ nav li {
     border-bottom: 1px solid #6E6E6E;
     padding-bottom: 10px;
 }
+
 .installa-app span {
     margin-left: 5px;
 }
@@ -315,6 +316,7 @@ footer {
 
 .footer-left .footer-left-icons i{
     margin-left: 10px;
+    font-size: 15px;
 }
 
 .footer-left div {
@@ -342,12 +344,12 @@ footer {
 }
 
 .footer-center-2 a i{
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .footer-center-2 a:nth-child(3) i {
-    font-size: 24px;
-    padding-top: 10px;
+    font-size: 25px;
+    padding-top: 12px;
 }
 
 .flex-center {
@@ -358,7 +360,7 @@ footer {
 }
 
 .linea-grigia {
-    width: 40%;
+    width: 50%;
     height: 4px;
     background-color: #585858;
     border-radius: 10px;
@@ -377,7 +379,7 @@ footer {
 } 
 
 .linea-piccola {
-    width: 70px;
+    width: 100px;
     height: 4px;
     border-radius: 20px;
     background-color: #585858;
@@ -393,14 +395,14 @@ footer {
     background-color: #AFAFAF;
 }
 
-/* footer left  */
+/* footer right  */
 .footer-right div {
-    padding: 0 10px;
+    padding: 0 5px;
 }
 
 .footer-right div i {
-    font-size: 12px;
-    padding-left: 10px;
+    font-size: 15px;
+    padding: 3px;
     color: white;
 }
 
@@ -411,6 +413,10 @@ footer {
 .footer-right .testo-bianco {
     display: flex;
     flex-wrap: nowrap;
+}
+
+.testo-bianco div:first-child, .testo-bianco div:last-child a, .testo-bianco div:last-child div {
+    vertical-align: middle;
 }
 
 /* bonus con EFFETTI HOVER  */
@@ -466,7 +472,7 @@ nav div:first-child ul li:hover {
 }
 
 .footer-center-2 a:nth-child(3):hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .footer-center .footer-center-2 a:hover i, .footer-right .testo-bianco div a:hover i {
@@ -512,7 +518,7 @@ nav div:first-child ul li:hover {
     display: block;
     position: relative;
     top: calc(100% - 7px);
-    left: calc(100% + 5px);
+    left: calc(100% - 5px);
 }
 
 .linea-piccola-2:active {
