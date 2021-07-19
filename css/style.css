@@ -321,10 +321,12 @@ footer {
 
 .footer-left-icons span:first-child i:hover {
     color: red;
+    transform: scale(1.2);
 }
 
 .footer-left-icons span:last-child i:hover {
     color: white;
+    transform: scale(1.2);
 }
 
 /* footer centrale  */

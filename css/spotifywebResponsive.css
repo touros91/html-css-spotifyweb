@@ -1,5 +1,5 @@
 /* visualizzazione XS mobile  */
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
 
     main aside {
             width: 50px; 
@@ -93,7 +93,7 @@
 }
 
 /* visualizzazione S mobile  */
-@media screen and (min-width: 481px) and (max-width: 700px) {
+@media screen and (min-width: 601px) and (max-width: 700px) {
     .sezione-album {
         display: flex;
         flex-wrap: wrap;
