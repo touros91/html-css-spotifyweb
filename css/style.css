@@ -108,6 +108,10 @@ nav a {
     margin-bottom: 5px;
 }
 
+#verde {
+    border-left: 1px solid #ADFF2E;
+}
+
 .playlist {
     display: flex;
     flex-direction: column;
@@ -225,6 +229,10 @@ nav li {
     padding: 0 10px;
     margin-top: 15px;
     list-style: none;
+}
+
+#verde-bottom {
+    border-bottom: 1px solid #ADFF2E;
 }
 
 .sezione-album {
@@ -425,18 +433,21 @@ footer {
     border-radius: 50%;
 }
 
-.menu-nav ul li:hover a{
+.menu-nav ul li:hover a, nav .sezione-playlist a:hover {
     color: white;
 }
 
-.menu-nav ul li:hover span{
+aside section a:hover {
+    border-left: 1px solid #ADFF2E;
+}
+
+.menu-nav ul li:hover span {
     width: 20px;
     height: 1px;
     border-bottom: 1px solid #ADFF2E;
 }
 
-nav div ul li:hover a, 
-nav .font-size-12.vertical-align:hover,
+nav div ul li:hover a,
 .installa-app span:hover {
     color: white;
 }
@@ -445,14 +456,9 @@ nav div:first-child ul li:hover {
     border-left: 1px solid #ADFF2E;
 }
 
-.padding-left-10 .plus-box.vertical-align:hover {
+.padding-left-10 .plus-box:hover {
     background-color: white;  
     color: black 
-}
-
-.font-size-12 vertical-align:hover {
-    color: white;
-    background-color: white;
 }
 
 .album-container .top-bar-section.padding-10 button:hover{
@@ -469,4 +475,8 @@ nav div:first-child ul li:hover {
 
 .footer-right .testo-bianco div:last-child:active .linea.linea-piccola {
     background-color: #585858; 
+}
+
+.footer-center .footer-center-2 a:hover i, .footer-right .testo-bianco div a:hover i {
+    color: #1ED760;
 }
