@@ -49,10 +49,6 @@ h2 {
     color: #F9F9F9;
 }
 
-.icone-bianche {
-    color: #D2D2D2;
-}
-
 .vertical-align {
     vertical-align: middle;
 }
@@ -424,6 +420,7 @@ footer {
     position: relative;
 }
 
+/* hover albums  */
 .sezione-album div:hover .img::after {
     content: "\f144";
     font-weight: 400;
@@ -445,10 +442,12 @@ footer {
     border-radius: 50%;
 }
 
+/* hover menù navigazione album  */
 .menu-nav ul li:hover a, nav .sezione-playlist a:hover {
     color: white;
 }
 
+/* hover menù nav sidebar  */
 aside section a:hover {
     border-left: 2px solid #ADFF2E;
 }
@@ -471,6 +470,7 @@ nav div:first-child ul li:hover {
     transform: scale(1.1);
 }
 
+/* hover footer  */
 .footer-center-2 a:nth-child(3):hover {
     transform: scale(1.1);
 }
@@ -479,6 +479,7 @@ nav div:first-child ul li:hover {
     color: #1ED760;
 }
 
+/* hover e click linea verde player  */
 .linea-grigia:hover .linea-bianca {
     background-color: greenyellow;
 }
@@ -504,6 +505,7 @@ nav div:first-child ul li:hover {
     transition: width 1s;
 }
 
+/* hover e click linea verde volume  */
 .linea-piccola:hover .linea-piccola-2 {
     background-color: greenyellow;
     position: relative;

@@ -29,10 +29,6 @@
         justify-content: flex-end;
     }
 
-    main aside .section-bottom a:first-child {
-        border-bottom: 1px solid #6E6E6E;
-    }
-
     main aside .section-bottom a:last-child {
         margin: 10px 0;    
     }
