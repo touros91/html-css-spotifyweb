@@ -227,16 +227,16 @@ nav li {
     justify-content: center;
 }
 
-.album-container ul {
-    display: flex;
-    justify-content: center;
+.menu-nav ul {
     margin-bottom: 20px;
 }
 
-.album-container ul li {
+.menu-nav ul li {
     padding: 0 10px;
     margin-top: 15px;
     list-style: none;
+    text-align: center;
+    display: inline-block; 
 }
 
 #verde-bottom::after {
@@ -244,7 +244,7 @@ nav li {
     display: block;
     height: 1px;
     background-color: greenyellow;
-    width: 35px;
+    width: 30px;
     margin: auto;
 }
 
@@ -310,7 +310,6 @@ footer {
 }
 
 .footer-left .footer-img-box img {
-    display: inline-block;
     width: 100%;
 }
 
@@ -524,8 +523,8 @@ nav div:first-child ul li:hover {
 .album-container .menu-nav ul li:hover a::after {
     content: "";
     display: block;
+    width: 30px;
     height: 2px;
     background-color: greenyellow;
-    width: 35px;
     margin: auto;
 }

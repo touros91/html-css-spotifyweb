@@ -1,8 +1,9 @@
 /* visualizzazione XS mobile  */
 @media screen and (max-width: 480px){
+
     main aside {
             width: 50px; 
-        }
+    }
 
     .album-container {
             min-width: calc(100% - 50px);
@@ -27,7 +28,6 @@
         width: 50%;
         margin-left: 8px;
         border-bottom: 1px solid #6E6E6E;
-        /* padding-bottom: 10px; */
     }
 
     main aside .section-bottom a:last-child {
@@ -37,7 +37,7 @@
 
     }
 
-    aside nav, aside div, aside .aside-bottom  {
+    aside nav, aside div, aside .aside-bottom {
         display: none;
     }
 
@@ -54,7 +54,13 @@
     .menu-nav ul li {
       width: 25%;  
       display: inline-block;
-      font-size: 9px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .menu-nav ul li {
+        flex-grow: 1;
+        justify-content: center;
     }
    
     .col-1-s, 
@@ -62,11 +68,34 @@
     .col-3-s, 
     .col-4-s, 
     .col-5-s, 
-    .col-6-s 
-    {
+    .col-6-s {
         width: calc(50% - 20px);
         margin: 10px;
     }
+
+    body footer {
+        background-color: #282828;
+        height: 120px;
+        z-index: 3;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer .footer-left, footer .footer-right {
+        width: 50%;
+    }
+
+    footer .footer-center {
+        width: 100%;
+        order: -1;
+    }
+
+    body main {
+        display: flex;
+        height: calc(100vh - 120px);
+    }
+
 }
 
 /* visualizzazione S mobile  */
@@ -83,8 +112,7 @@
 
   .menu-nav ul li {
       width: calc(100% / 3);  
-      display: inline-block;
-      font-size: 9px;
+
     }
    
     .col-1-s, 
@@ -101,6 +129,7 @@
 
 /* visualizzazione MD da tablet  */
 @media screen and (min-width: 701px) and (max-width: 1100px) {
+    
     .menu-nav ul{
         display: flex;
         flex-wrap: wrap;  
@@ -109,7 +138,11 @@
     .menu-nav ul li {
       width: 20%;  
       display: inline-block;
-      font-size: 9px;
+    }
+
+    .menu-nav ul li:last-child {
+        flex-grow: 1;
+        justify-content: center;
     }
 
     .sezione-album {
