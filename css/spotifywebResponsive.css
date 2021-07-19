@@ -34,7 +34,6 @@
         width: 25px;
         height: 25px;
         margin: 10px 0 20px 5px;
-
     }
 
     aside nav, aside div, aside .aside-bottom {
@@ -52,7 +51,6 @@
     }
 
     .menu-nav ul li {
-      width: 25%;  
       display: inline-block;
       display: flex;
       justify-content: space-between;
