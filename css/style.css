@@ -236,15 +236,6 @@ nav li {
     display: inline-block; 
 }
 
-#verde-bottom::after {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: greenyellow;
-    width: 30px;
-    margin: auto;
-}
-
 .sezione-album {
     display: flex;
 }
